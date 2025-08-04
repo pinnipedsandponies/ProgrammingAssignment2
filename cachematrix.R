@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These functions take advantage of scoping rules to preserve or
+## change the state of an object in R. The first function creates a
+## matrix object that can cache it's inverse. 
+## The second function solves the matrix by checking if it has changed
+## and returning the inverse, or if its the same, finding and returning
+## the cached value.
 
-## Write a short comment describing this function
+## makeCacheMatrix creates a matrix that will cache its inverse value
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
